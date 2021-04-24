@@ -2,7 +2,6 @@ const functions = require("firebase-functions");
 const nodemailer = require("nodemailer");
 
 exports.sendEmail = functions.https.onRequest((req, res) => {
-  console.log(req.body.name);
   const smtpTrans = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
