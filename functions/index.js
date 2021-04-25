@@ -1,6 +1,5 @@
 const functions = require("firebase-functions");
 const nodemailer = require("nodemailer");
-const path = require("path");
 
 exports.sendEmail = functions.https.onRequest((req, res) => {
   const smtpTrans = nodemailer.createTransport({
