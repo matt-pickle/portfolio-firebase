@@ -1,5 +1,6 @@
 const functions = require("firebase-functions");
 const nodemailer = require("nodemailer");
+const path = require("path");
 
 exports.sendEmail = functions.https.onRequest((req, res) => {
   const smtpTrans = nodemailer.createTransport({
@@ -25,7 +26,7 @@ exports.sendEmail = functions.https.onRequest((req, res) => {
       console.error(err);
       res.send("Server Error. Please try again or send email to mattpickle@mattpickle.net");
     } else {
-      res.send("Message sent successfully.");
+      res.end();
     }
   })
 })

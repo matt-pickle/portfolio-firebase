@@ -81,7 +81,12 @@
 
       <section id="contact">
         <h1 class="section-title">Contact</h1>
-        <form action="http://localhost:5001/portfolio-84ccb/us-central1/sendEmail" id="contact-form" method="post" role="form">
+        <form onsubmit="setTimeout(function(){window.location.reload();},10);"
+              action="http://localhost:5001/portfolio-84ccb/us-central1/sendEmail"
+              id="contact-form"
+              method="post"
+              role="form"
+        >
           <label for="name" class="label">Name:</label>
           <input type="text" class="contact-input" id="name" name="name">
           <label for="company" class="label">Company:</label>
