@@ -24,9 +24,7 @@ exports.sendEmail = functions.https.onRequest((req, res) => {
   smtpTrans.sendMail(mailOpts, (err, response) => {
     if (err) {
       console.error(err);
-      res.send("Server Error. Please try again or send email to mattpickle@mattpickle.net");
-    } else {
-      res.end();
     }
-  })
-})
+    res.end();
+  });
+});
