@@ -14,7 +14,8 @@ main {
   display: grid;
   grid-template-areas:
     "home"
-    "projects"
+    "web-apps"
+    "mobile-apps"
     "skills"
     "contact";
 }
@@ -64,12 +65,12 @@ nav {
 nav ul {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
   justify-items: center;
   align-items: center;
   width: auto;
   height: auto;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 2.25;
   list-style: none;
   padding: 1em;
@@ -99,7 +100,7 @@ nav a {
   font-size: 2rem;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   nav {
     background: none;
     left: 0;
@@ -118,8 +119,8 @@ nav a {
   }
 
   nav ul {
-    grid-template-columns: auto auto auto auto auto auto;
-    width: 500px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    width: 600px;
     height: 2.75em;
     font-size: 1rem;
     padding: 0;
@@ -221,8 +222,18 @@ nav a {
 
 /* PROJECTS SECTION*/
 
-#projects {
-  grid-area: projects;
+#web-apps {
+  grid-area: web-apps;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  align-items: center;
+  justify-items: center;
+  min-height: 100vh;
+  padding: 1em;
+}
+
+#mobile-apps {
+  grid-area: mobile-apps;
   display: grid;
   grid-template-rows: min-content 1fr;
   align-items: center;
@@ -254,6 +265,10 @@ nav a {
   grid-gap: 1em;
   justify-items: center;
   align-items: center;
+}
+
+.no-gap {
+  grid-gap: 0;
 }
 
 .project {
@@ -314,6 +329,17 @@ nav a {
 .code-btn {
   grid-area: code-btn;
   align-self: end;
+}
+
+.store-btn {
+  grid-area: demo-btn;
+  align-self: end;
+  padding: .25em 1.9em;
+  height: 2.55em;
+}
+
+.google-play-logo {
+  height: 2em;
 }
 
 .weather {
