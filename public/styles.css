@@ -334,12 +334,12 @@ nav a {
 .store-btn {
   grid-area: demo-btn;
   align-self: end;
-  padding: .25em 1.9em;
+  padding: .3em 1.9em;
   height: 2.55em;
 }
 
 .google-play-logo {
-  height: 2em;
+  height: 1.9em;
 }
 
 .weather {
