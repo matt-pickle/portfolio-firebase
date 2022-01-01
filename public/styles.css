@@ -342,6 +342,10 @@ nav a {
   height: 1.9em;
 }
 
+.garden {
+  background-image: url("./images/garden-thumbnail.png");
+}
+
 .weather {
   background-image: url("./images/weather-thumbnail.png");
 }
