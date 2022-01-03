@@ -18,7 +18,6 @@ navLinks.forEach(link => {
   });
 });
 
-submitButton.hidden = true;
 function captchaSuccess() {
   submitButton.hidden = false;
 }
