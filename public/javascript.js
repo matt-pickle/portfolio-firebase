@@ -2,6 +2,7 @@ const openNavButton = document.querySelector("#open-nav-button");
 const closeNavButton = document.querySelector("#close-nav-button");
 const navLinks = document.querySelectorAll("nav a");
 const nav = document.querySelector('.nav');
+const submitButton = document.querySelector(".submit");
 
 openNavButton.addEventListener("click", () => {
   nav.classList.add("nav-open");
@@ -16,3 +17,8 @@ navLinks.forEach(link => {
     nav.classList.remove("nav-open");
   });
 });
+
+submitButton.hidden = true;
+function captchaSuccess() {
+  submitButton.hidden = false;
+}

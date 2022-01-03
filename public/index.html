@@ -5,6 +5,7 @@
     <link href="styles.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Matt Pickle</title>
   </head>
@@ -112,7 +113,7 @@
 
       <section id="contact">
         <h1 class="section-title">Contact</h1>
-        <form onsubmit="setTimeout(function(){window.location.reload();},10);"
+        <form onsubmit="setTimeout(function(){window.location.reload();},50);"
               action="https://us-central1-portfolio-84ccb.cloudfunctions.net/sendEmail"
               id="contact-form"
               method="post"
@@ -127,6 +128,12 @@
           <label for="message" class="label">Message:</label>
           <textarea id="message" name="message"></textarea>
           <button type="submit" class="submit">SUBMIT</button>
+          <div
+            class="g-recaptcha"
+            data-sitekey="6Lc4-eYdAAAAAKnaqep_1eq7W8_GQd5-p52lOYN1"
+            data-callback="captchaSuccess"  
+          ></div>
+          
         </form>
       </section>
     </main>  
