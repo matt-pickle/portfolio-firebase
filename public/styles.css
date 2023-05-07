@@ -100,6 +100,11 @@ nav a {
   font-size: 2rem;
 }
 
+section {
+  padding: 1em;
+  margin-bottom: 10em;
+}
+
 @media (min-width: 600px) {
   nav {
     background: none;
@@ -151,6 +156,7 @@ nav a {
   justify-items: center;
   align-items: center;
   height: 100vh;
+  padding: 0 1em;
 }
 
 .home-text-container {
@@ -163,7 +169,7 @@ nav a {
   color: white;
   font-size: 3rem;
   line-height: 1.25;
-  margin: 0;
+  margin-bottom: .25em;
 }
 
 .home-title::after {
@@ -186,7 +192,7 @@ nav a {
 .home-text {
   justify-self: start;
   color: white;
-  margin: 0 2em 1em;
+  margin-bottom: 1em;
 }
 
 .fa-chevron-down {
@@ -220,7 +226,7 @@ nav a {
   }
 }
 
-/* PROJECTS SECTION*/
+/* PROJECTS SECTION */
 
 #web-apps {
   grid-area: web-apps;
@@ -228,8 +234,6 @@ nav a {
   grid-template-rows: min-content 1fr;
   align-items: center;
   justify-items: center;
-  min-height: 100vh;
-  padding: 1em;
 }
 
 #mobile-apps {
@@ -238,15 +242,13 @@ nav a {
   grid-template-rows: min-content 1fr;
   align-items: center;
   justify-items: center;
-  min-height: 100vh;
-  padding: 1em;
 }
 
 .section-title {
   color: white;
   font-size: 2rem;
   line-height: 1.25;
-  margin: 1em 0;
+  margin-bottom: 1.5em;
 }
 
 .section-title::after {
@@ -386,10 +388,6 @@ nav a {
   .projects-container {
     grid-template-columns: auto auto auto auto;
   }
-
-  .section-title {
-    margin: 1em 0 0;
-  }
 }
 
 /* SKILLS SECTION */
@@ -400,8 +398,6 @@ nav a {
   grid-template-rows: min-content 1fr;
   align-items: center;
   justify-items: center;
-  min-height: 100vh;
-  padding: 1em;
 }
 
 .skills-list {
@@ -444,7 +440,6 @@ nav a {
   display: grid;
   grid-template-rows: min-content 1fr;
   justify-items: center;
-  min-height: 100vh;
 }
 
 #contact-form {
