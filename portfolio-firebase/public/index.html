@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="images/favicon.png">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matt Pickle</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <header>
+    <button id="open-nav-button" class="fas fa-bars"></button>
+      <nav class="nav">
+        <button id="close-nav-button">&times;</button>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#web-apps">Web Apps</a></li>
+          <li><a href="#mobile-apps">Mobile Apps</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/matt-pickle" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/matt-pickle" target="_blank">GitHub</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="home-text-container">
+          <h1 class="home-title blue-line">Matt Pickle</h1>
+          <h2 class="home-subtitle">Web & Mobile Developer</h2>
+          <p class="home-text">I'm a front end developer with experience in React, JavaScript,
+            HTML5, CSS3, and React Native.</p>
+          <p class="home-text">Please contact me at mattpickle@mattpickle.net
+            concerning employment opportunities.</p>
+       </div>
+       <a href="#web-apps" class="fas fa-chevron-down"></a>
+      </section>
+
+      <section id="web-apps">
+        <h1 class="section-title">Web Apps</h1>
+        <div class="projects-container">
+          <div class="project journal">
+            <p class="project-title">Journal App</p>
+            <a href="https://www.journal.mattpickle.net" class="project-btn demo-btn" target="_blank">DEMO</a>
+            <a href="https://github.com/mpickle86/journal" class="project-btn code-btn" target="_blank">CODE</a>
+          </div>
+          <div class="project workout-tracker">
+            <p class="project-title">Workout Tracker</p>
+            <a href="https://www.workout-tracker.mattpickle.net" class="project-btn demo-btn" target="_blank">DEMO</a>
+            <a href="https://github.com/mpickle86/workout-tracker-firebase" class="project-btn code-btn" target="_blank">CODE</a>
+          </div>
+          <div class="project pirate-translator">
+            <p class="project-title">Pirate Translator</p>
+            <a href="https://www.pirate-translator.mattpickle.net" class="project-btn demo-btn" target="_blank">DEMO</a>
+            <a href="https://github.com/mpickle86/pirate-translator" class="project-btn code-btn" target="_blank">CODE</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="mobile-apps">
+        <h1 class="section-title">Mobile Apps</h1>
+        <div class="projects-container">
+          <div class="project garden">
+            <p class="project-title">Garden Planner</p>
+            <a href="https://play.google.com/store/apps/details?id=com.slightlyimpressive.gardenplanner"
+               class="project-btn store-btn"
+               target="_blank">
+              <img src="./images/google-play.png" class="google-play-logo">
+            </a>
+            <a href="https://github.com/mpickle86/garden-mobile" class="project-btn code-btn" target="_blank">CODE</a>
+          </div>
+          <div class="project weather">
+            <p class="project-title">Simple Weather</p>
+            <a href="https://play.google.com/store/apps/details?id=weather.mobile"
+               class="project-btn store-btn"
+               target="_blank">
+              <img src="./images/google-play.png" class="google-play-logo">
+            </a>
+            <a href="https://github.com/mpickle86/weather-mobile/tree/version3" class="project-btn code-btn" target="_blank">CODE</a>
+          </div>
+          <div class="project notes">
+            <p class="project-title">Simple Notes</p>
+            <a href="https://play.google.com/store/apps/details?id=com.slightlyimpressive.simplenotes"
+               class="project-btn store-btn"
+               target="_blank">
+              <img src="./images/google-play.png" class="google-play-logo">
+            </a>
+            <a href="https://github.com/mpickle86/notes-mobile" class="project-btn code-btn" target="_blank">CODE</a>
+          </div>
+        </div>
+      </section>
+      
+      <section id="skills">
+        <h1 class="section-title">Skills</h1>
+        <ul class="skills-list">
+          <li>JavaScript</li>
+          <li>HTML5</li>
+          <li>CSS3/Sass</li>
+          <li>React</li>
+          <li>React Native</li>
+          <li>Express</li>
+          <li>Node</li>
+          <li>MongoDB</li>
+          <li>Firebase</li>
+          <li>Responsive Design</li>
+          <li>CRUD/RESTful APIs</li>
+          <li>Graphic Design</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h1 class="section-title">Contact</h1>
+        <form onsubmit="setTimeout(function(){window.location.reload();},50);"
+              action="https://us-central1-portfolio-84ccb.cloudfunctions.net/sendEmail"
+              id="contact-form"
+              method="post"
+              role="form"
+        >
+          <label for="name" class="label">Name:</label>
+          <input type="text" class="contact-input" id="name" name="name">
+          <label for="company" class="label">Company:</label>
+          <input type="text" class="contact-input" id="company" name="company">
+          <label for="email" class="label">Email:</label>
+          <input type="text" class="contact-input" id="email" name="email">
+          <label for="message" class="label">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <button type="submit" class="submit" hidden="true">SUBMIT</button>
+          <div
+            class="g-recaptcha"
+            data-sitekey="6Lc4-eYdAAAAAKnaqep_1eq7W8_GQd5-p52lOYN1"
+            data-callback="captchaSuccess"  
+          ></div>
+          
+        </form>
+      </section>
+    </main>  
+  </body>
+  <script src="./javascript.js"></script>
+</html>
