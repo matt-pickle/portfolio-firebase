@@ -343,27 +343,27 @@ nav a {
 }
 
 .garden {
-  background-image: url("./images/garden-thumbnail.png");
+  background-image: url("./images/garden-thumbnail.jpg");
 }
 
 .weather {
-  background-image: url("./images/weather-thumbnail.png");
+  background-image: url("./images/weather-thumbnail.jpg");
 }
 
 .notes {
-  background-image: url("./images/notes-thumbnail.png");
+  background-image: url("./images/notes-thumbnail.jpg");
 }
 
 .workout-tracker {
-  background-image: url("./images/workout-tracker-thumbnail.png");
+  background-image: url("./images/workout-tracker-thumbnail.jpg");
 }
 
 .journal {
-  background-image: url("./images/journal-thumbnail.png");
+  background-image: url("./images/journal-thumbnail.jpg");
 }
 
 .pirate-translator {
-  background-image: url("./images/pirate-translator-thumbnail.png");
+  background-image: url("./images/pirate-translator-thumbnail.jpg");
 }
 
 @media (min-width: 450px) {
